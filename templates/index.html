@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of a Software Engineering Student focused on Backend and Systems.">
+    <title>Farah Tanveer Portfolio</title>
+    <meta name="description" content="Computer Science Portfolio of Farah Tanveer - Exploring the vastness of Systems, AI/ML, and Information Security.">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
         rel="stylesheet">
+    <!-- DevIcon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -21,6 +25,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -200,14 +205,15 @@
                     <h4 class="category-name">{{ category }}</h4>
                     <ul class="skill-list">
                         {% for skill in skill_list %}
-                        <li>{{ skill }}</li>
+                        <li>
+                            <i class="{{ skill.icon }}"></i>
+                            <span>{{ skill.name }}</span>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>
                 {% endfor %}
             </div>
-        </section>
-
         </section>
 
         <!-- Engineering Thinking -->
@@ -254,12 +260,9 @@
                         </div>
                     </div>
 
-                    {% if project.video %}
-                    <div class="project-video">
-                        <video width="100%" controls preload="metadata" class="video-player">
-                            <source src="{{ project.video }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                    {% if project.image %}
+                    <div class="project-image">
+                        <img src="{{ project.image }}" alt="{{ project.title }}" class="project-screenshot">
                     </div>
                     {% endif %}
 
@@ -279,8 +282,6 @@
                 </article>
                 {% endfor %}
             </div>
-        </section>
-
         </section>
 
         <!-- Competitive Programming Section (Moved) -->
@@ -321,7 +322,6 @@
                 </div>
 
                 <div class="contact-card glass-panel">
-                    <div class="book-icon">📖</div>
                     <p class="contact-desc">Open to internships, collaborations, and good conversations about systems,
                         databases, or the philosophy of building.</p>
 

@@ -18,20 +18,20 @@ projects = [
         "tech_reasoning": "Flask was chosen to quickly build the backend validation logic while keeping the frontend simple with HTML/CSS/JS.",
         "learnings": "Gained experience in implementing validation logic for security checks and integrating backend logic with a frontend interface.",
         "outcome": "Developed a robust tool that implements complex validation logic for security checks.",
-                "github": "https://github.com/Farah-Tanveer/securepass",
-        "video": "/static/videos/SecurePass.mp4"
+        "github": "https://github.com/Farah-Tanveer/securepass",
+        "image": "/static/images/SecurePass.png"
     },
     {
         "id": "netra",
         "title": "Netra (Network Monitoring System)",
         "problem": "Need for an interactive dashboard to easily visualize network traffic and logs.",
         "built": "A network monitoring system with efficient data handling and packet tracking.",
-                "tech": ["HTML", "CSS", "JavaScript", "Python", "Flask", "REST API"],
+        "tech": ["HTML", "CSS", "JavaScript", "Python", "Flask", "REST API"],
         "tech_reasoning": "Used JavaScript for the frontend visualization and Python/Flask for backend packet handling and RESTful API endpoints.",
         "learnings": "Learned efficient data handling and logging mechanisms for tracking and analyzing captured packets.",
         "outcome": "Developed an interactive dashboard to visualize network traffic logs in real-time.",
         "github": "https://github.com/Farah-Tanveer/netra",
-        "video": "/static/videos/Netra.mp4" 
+        "image": "/static/images/Netra.png"
     },
     {
         "id": "urbanride",
@@ -43,19 +43,20 @@ projects = [
         "learnings": "Mastered writing optimized SQL queries and understanding normalization and database constraints.",
         "outcome": "Designed a database with optimized SQL queries, ensuring data integrity for efficient management.",
         "github": "https://github.com/Farah-Tanveer/urbanride",
-        "video": "/static/videos/UrbanRide.mp4"
+        "image": "/static/images/urbanRide.png"
     },
     {
         "id": "beautybliss",
         "title": "BeautyBliss (E-commerce Beauty Store UI)",
         "problem": "Lack of a responsive and cross-browser compatible storefront for e-commerce.",
         "built": "An E-commerce Beauty Store UI focusing on clean layout design.",
-                "tech": ["HTML", "CSS", "Vanilla JS"],
+        "tech": ["HTML", "CSS", "Vanilla JS"],
         "tech_reasoning": "Focused on foundational web technologies and Vanilla JS to ensure complete control over responsive design and interactive elements.",
         "learnings": "Improved skills in clean layout design, user experience optimization, and ensuring cross-browser compatibility.",
         "outcome": "Created a fully responsive interface that improved user experience and mobile accessibility.",
         "github": "https://github.com/Farah-Tanveer/beautybliss",
-        "video": "/static/videos/BeautyBliss.mp4"
+        "demo": "https://farah-tanveer.github.io/Beauty-Store-Website/",
+        "image": "/static/images/BeautyBliss.png"
     }
 ]
 
@@ -84,6 +85,7 @@ skills = {
         {"name": "VS Code", "icon": "devicon-vscode-plain"},
         {"name": "PyCharm", "icon": "devicon-pycharm-plain"},
         {"name": "Linux", "icon": "devicon-linux-plain"},
+        {"name": "Figma", "icon": "devicon-figma-plain"},
         {"name": "Virtual Machine", "icon": "fas fa-desktop"},
         {"name": "Lucidchart", "icon": "fas fa-project-diagram"},
         {"name": "emu8086", "icon": "fas fa-microchip"}
