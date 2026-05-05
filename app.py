@@ -60,10 +60,42 @@ projects = [
 ]
 
 skills = {
-    "Languages": ["C++ (DSA, OOP)", "Python", "JavaScript", "HTML", "CSS", "SQL"],
-    "Frameworks & Libraries": ["Flask", "NumPy", "Pandas", "React (Learning)"],
-    "Databases": ["MySQL", "SQLite", "Oracle SQL"],
-        "Soft Skills & Concepts": ["Project Management", "Critical Thinking", "Content Writing", "Problem Solving", "Team Work", "Effective Communication"]
+    "Languages": [
+        {"name": "C++ (DSA, OOP)", "icon": "devicon-cplusplus-plain"},
+        {"name": "Python", "icon": "devicon-python-plain"},
+        {"name": "JavaScript", "icon": "devicon-javascript-plain"},
+        {"name": "HTML", "icon": "devicon-html5-plain"},
+        {"name": "CSS", "icon": "devicon-css3-plain"},
+        {"name": "SQL", "icon": "devicon-postgresql-plain"}
+    ],
+    "Frameworks & Libraries": [
+        {"name": "Flask", "icon": "devicon-flask-original"},
+        {"name": "NumPy", "icon": "devicon-numpy-original"},
+        {"name": "Pandas", "icon": "devicon-pandas-original"},
+        {"name": "React (Learning)", "icon": "devicon-react-original"}
+    ],
+    "Databases": [
+        {"name": "MySQL", "icon": "devicon-mysql-plain"},
+        {"name": "SQLite", "icon": "devicon-sqlite-plain"},
+        {"name": "Oracle SQL", "icon": "devicon-oracle-original"}
+    ],
+    "Developer Tools & Platforms": [
+        {"name": "Git", "icon": "devicon-git-plain"},
+        {"name": "VS Code", "icon": "devicon-vscode-plain"},
+        {"name": "PyCharm", "icon": "devicon-pycharm-plain"},
+        {"name": "Linux", "icon": "devicon-linux-plain"},
+        {"name": "Virtual Machine", "icon": "fas fa-desktop"},
+        {"name": "Lucidchart", "icon": "fas fa-project-diagram"},
+        {"name": "emu8086", "icon": "fas fa-microchip"}
+    ],
+    "Soft Skills & Concepts": [
+        {"name": "Project Management", "icon": "fas fa-tasks"},
+        {"name": "Critical Thinking", "icon": "fas fa-brain"},
+        {"name": "Content Writing", "icon": "fas fa-pen-nib"},
+        {"name": "Problem Solving", "icon": "fas fa-lightbulb"},
+        {"name": "Team Work", "icon": "fas fa-users"},
+        {"name": "Effective Communication", "icon": "fas fa-comments"}
+    ]
 }
 
 @app.route("/")
@@ -104,4 +136,4 @@ def stats():
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=True)
