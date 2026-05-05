@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of a Software Engineering Student focused on Backend and Systems.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar glass-panel">
+        <div class="nav-content">
+            <a href="#landing" class="nav-logo gradient-text">FT.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle Theme">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="display:none;">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Landing Section -->
+        <header class="section fade-in" id="landing" style="position: relative;">
+            <div class="hero-glow"></div>
+
+
+
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1 class="name">
+                        <span class="hero-intro">Hi, I'm</span>
+                        <span class="hero-main">Farah Tanveer</span>
+                    </h1>
+                    <h2 class="role">Computer Science Student & Full-Stack Developer</h2>
+                    <div class="hero-divider"></div>
+
+                    <div class="header-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#about" class="btn btn-secondary">About Me</a>
+                    </div>
+
+                    <div class="value-prop">
+                        <div class="hero-socials">
+                            <a href="https://github.com/Farah-Tanveer" target="_blank" class="social-btn"
+                                title="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/farahtanveer/" target="_blank" class="social-btn"
+                                title="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=farahtanveer518@gmail.com"
+                                target="_blank" class="social-btn" title="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-avatar">
+                    <img src="/static/Profilepic.png" alt="Farah Tanveer">
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="section fade-in" id="about">
+            <h3 class="section-title">Beyond the Code</h3>
+            <div class="about-grid">
+                <div class="about-card glass-panel">
+                    <h4>Personal Philosophy & Interests</h4>
+                    <p>When I'm not writing code, I find balance and inspiration in poetry
+                        (specifically the works of <strong>Allama Iqbal</strong>), and deeply understanding the
+                        <strong>Quran and Islam</strong>.</p>
+                    <p>I am fascinated by psychological concepts and human behavior. In my downtime, I
+                        enjoy <strong>art, cooking, and reading philosophy</strong>. I also value self-care and
+                        retreating into nature to spend time in <strong>solitude</strong>, which fuels my creativity and
+                        focus.</p>
+                </div>
+
+                <div class="about-card glass-panel">
+                    <h4>Academic Excellence</h4>
+                    <p>I have maintained a strong academic record, driven by deep curiosity and dedication. I ranked
+                        among the top 10 scorers in Lahore Board Matriculation, and was amongst the top scorers in my
+                        district for Intermediate.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof of Work & Growth Section -->
+        <section class="section fade-in" id="growth">
+            <h3 class="section-title">Proof of Work</h3>
+            <div class="stats-grid" id="github-stats">
+                <div class="stat-card glass-panel">
+                    <div class="stat-number" id="stat-commits">--</div>
+                    <div class="stat-name">Commits</div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-number" id="stat-repos">--</div>
+                    <div class="stat-name">Repositories</div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-number" id="stat-loc">--</div>
+                    <div class="stat-name">Lines of Code</div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-number" id="stat-days">--</div>
+                    <div class="stat-name">Active Days</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section fade-in" id="education">
+            <h3 class="section-title">Education</h3>
+            <div class="education-card glass-panel">
+                <div class="edu-header">
+                    <div>
+                        <h4>University of the Punjab</h4>
+                        <p class="edu-degree">Bachelor's in Computer Science</p>
+                    </div>
+                    <div class="edu-date">2024 - 2028</div>
+                </div>
+                <div class="edu-courses">
+                    <h5>Major Courses</h5>
+                    <div class="tech-stack">
+                        <span class="tech-badge glass-badge">Data Structures</span>
+                        <span class="tech-badge glass-badge">Software Engineering</span>
+                        <span class="tech-badge glass-badge">Database Systems</span>
+                        <span class="tech-badge glass-badge">Project Management</span>
+                        <span class="tech-badge glass-badge">Calculus</span>
+                        <span class="tech-badge glass-badge">Information Security</span>
+                        <span class="tech-badge glass-badge">Computer Networks</span>
+                        <span class="tech-badge glass-badge">OOP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section fade-in" id="skills">
+            <h3 class="section-title">Technical Competencies</h3>
+            <div class="skills-container">
+                {% for category, skill_list in skills.items() %}
+                <div class="skill-category">
+                    <h4 class="category-name">{{ category }}</h4>
+                    <ul class="skill-list">
+                        {% for skill in skill_list %}
+                        <li>{{ skill }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Engineering Thinking -->
+        <section class="section fade-in" id="engineering-thinking">
+            <h3 class="section-title">Engineering Thinking</h3>
+            <div class="thinking-grid">
+                <div class="thinking-card">
+                    <h4>Architecture Decisions: Flask over Node.js</h4>
+                    <p>I chose Python/Flask for projects requiring system-level access or data manipulation (like the
+                        Netra packet sniffer). Its extensive standard library and direct integration with tools like
+                        Scapy make it superior for backend-focused tools, allowing me to build robust applications
+                        without complex workarounds.</p>
+                </div>
+                <div class="thinking-card">
+                    <h4>Database Modeling: Relational vs Document</h4>
+                    <p>For applications like UrbanRide, relational integrity is critical. I default to SQL databases
+                        (SQLite/PostgreSQL) to enforce ACID properties and structured relationships, ensuring reliable
+                        transactions for bookings over the schemaless flexibility of NoSQL.</p>
+                </div>
+                <div class="thinking-card">
+                    <h4>Building from First Principles</h4>
+                    <p>As a student, I focus on understanding how things work under the hood. Instead of relying solely
+                        on heavy frameworks, I often build features from scratch (like raw DOM manipulation or direct
+                        socket communication) to solidify my core engineering fundamentals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section fade-in" id="projects">
+            <h3 class="section-title">Featured Projects</h3>
+            <div class="projects-list">
+                {% for project in projects %}
+                <article class="project-card glass-panel">
+                    <div class="project-header">
+                        <h4 class="project-title">{{ project.title }}</h4>
+                        <div class="project-links">
+                            <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer"
+                                class="gradient-text">GitHub Repo</a>
+                            {% if project.demo and project.demo != "#" %}
+                            <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer"
+                                class="gradient-text">Live Demo</a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if project.video %}
+                    <div class="project-video">
+                        <video width="100%" controls preload="metadata" class="video-player">
+                            <source src="{{ project.video }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    {% endif %}
+
+                    <div class="tech-stack">
+                        {% for tech in project.tech %}
+                        <span class="tech-badge glass-badge">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+
+                    <div class="project-actions-footer">
+                        <button class="btn-detail open-modal" data-title="{{ project.title }}"
+                            data-problem="{{ project.problem }}" data-approach="{{ project.tech_reasoning }}"
+                            data-outcome="{{ project.outcome }}">
+                            See Details
+                        </button>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        </section>
+
+        <!-- Competitive Programming Section (Moved) -->
+        <section class="section fade-in" id="cp">
+            <h3 class="section-title">Competitive Programming</h3>
+            <div class="cp-grid">
+                <div class="cp-card glass-panel">
+                    <div class="cp-icon">🏆</div>
+                    <h4>ICPC Regionalist</h4>
+                    <p>Recognized as an ICPC Regionalist, demonstrating high-level algorithmic proficiency on a global
+                        stage.</p>
+                </div>
+                <div class="cp-card glass-panel">
+                    <div class="cp-icon">💻</div>
+                    <h4>Contest Participation</h4>
+                    <ul class="cp-list">
+                        <li>UET Logic Bits</li>
+                        <li>Codebees PUCIT</li>
+                        <li>Ignite Speed Programming</li>
+                        <li>Cosmocon PUCIT</li>
+                    </ul>
+                </div>
+                <div class="cp-card glass-panel">
+                    <div class="cp-icon">🚀</div>
+                    <h4>LeetCode Athlete</h4>
+                    <p>Consistently active on LeetCode, solving complex data structure and algorithm challenges to
+                        maintain peak problem-solving performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer class="section fade-in" id="contact">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <span class="say-hello">SAY HELLO</span>
+                    <h2 class="contact-headline">Let's build something together</h2>
+                </div>
+
+                <div class="contact-card glass-panel">
+                    <div class="book-icon">📖</div>
+                    <p class="contact-desc">Open to internships, collaborations, and good conversations about systems,
+                        databases, or the philosophy of building.</p>
+
+                    <div class="contact-actions">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=farahtanveer518@gmail.com&su=Collaboration Proposal&body=Hi Farah,%0D%0A%0D%0AI saw your portfolio and would love to collaborate on a project.%0D%0A%0D%0AMy Interests: [Insert your interests here]%0D%0AMy Ideas: [Insert your ideas here]%0D%0A%0D%0ABest regards,%0D%0A[Your Name]"
+                            target="_blank" class="contact-btn primary">
+                            <span class="icon">✉</span> farahtanveer518@gmail.com
+                        </a>
+                        <div class="contact-btn secondary no-link">
+                            <span class="icon">✉</span> farahparwana@gmail.com
+                        </div>
+                    </div>
+
+                    <div class="discord-tag">
+                        Discord: <strong>farahtanveer_95966</strong>
+                    </div>
+
+                    <div class="social-links-footer">
+                        <a href="https://github.com/Farah-Tanveer" target="_blank" class="social-icon" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/farahtanveer/" target="_blank" class="social-icon"
+                            title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=farahtanveer518@gmail.com&su=Collaboration Proposal"
+                            target="_blank" class="social-icon" title="Want a Collaboration?">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2026</span> Farah Tanveer. All rights reserved.</p>
+            <p class="footer-subtext">Built with Flask & ♥</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title" class="gradient-text">Project Title</h3>
+
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h5>The Challenge</h5>
+                    <p id="modal-problem"></p>
+                </div>
+                <div class="modal-section">
+                    <h5>Technical Approach</h5>
+                    <p id="modal-approach"></p>
+                </div>
+                <div class="modal-section highlight-box">
+                    <h5>Impact & Outcome</h5>
+                    <p id="modal-outcome"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
