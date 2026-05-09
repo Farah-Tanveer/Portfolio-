@@ -31,6 +31,7 @@ projects = [
         "learnings": "Learned efficient data handling and logging mechanisms for tracking and analyzing captured packets.",
         "outcome": "Developed an interactive dashboard to visualize network traffic logs in real-time.",
         "github": "https://github.com/Farah-Tanveer/netra",
+        "demo": "https://netra-mo9m.onrender.com/",
         "image": "/static/images/Netra.png"
     },
     {
